@@ -1,0 +1,71 @@
+.user_box{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 3em;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px #00000033;
+
+}
+.user_box h3{
+    font-size: 1.8rem;
+    font-family: Arial;
+    font-weight: bolder;
+    margin-bottom: 3%;
+}
+.msg_box{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user_info{
+    display: flex;
+    flex-direction: column;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    border-bottom: 1px solid #c1bbbb;
+    border-top: 1px solid #c1bbbb;
+}
+.user_info p{
+    font-size: 1rem;
+    color: #565656;
+    font-family: arial;
+    margin-bottom: 3%;
+}
+.user_info span{
+    font-weight: bold;
+}
+.button{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    align-items: center ;
+    justify-content:space-around;
+
+}
+.button button{
+    width: 30%;
+    height: 35px;
+    font-size: 1rem;
+    font-style: arial;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #e7a3fa;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: .3s;
+
+}
+
+.button button:hover{
+    background-color: #D170EF;
+}
+
+.button button svg{
+    margin-right: 4px;
+}
