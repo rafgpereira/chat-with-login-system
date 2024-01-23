@@ -1,62 +1,80 @@
-.log{
-    background-color: #ffffff; 
-    display: flex;
-    width: 90%;
-    max-width: 1000px;
-    height: 90%;
-    border-radius: 15px;
-    box-shadow: 3px 3px 8px #00000033;
+.log {
+  background-color: #ffffff;
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px #00000033;
 }
-.log_info{
-    width: 50%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
+.log_info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.log_info_box{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-
+.log_info_box {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
-.log_info_box h3{
-    font-size: 1.8rem;
-    font-family: Arial;
-    font-weight: bolder;
-    margin-bottom: 3%;
+.log_info_box h3 {
+  font-size: 1.8rem;
+  font-family: Arial;
+  font-weight: bolder;
+  margin-bottom: 3%;
 }
-.log_info_box p{
-    font-size: 1rem;
-    color: #565656;
-    font-family: arial;
-    margin-bottom: 3%;
+.log_info_box p {
+  font-size: 1rem;
+  color: #565656;
+  font-family: arial;
+  margin-bottom: 3%;
 }
-.log_info_box p a{
-    text-decoration: none;
-    color: #D170EF;
-    font-weight: 700;
+.log_info_box p a {
+  text-decoration: none;
+  color: #d170ef;
+  font-weight: 700;
 }
-.div_msg{
-    height: 50px;
+.div_msg {
+  height: 50px;
 }
 
-.log_img{
-    width: 50%;
-    background-color:#f1d1fa;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 15px 15px 0;
+.log_img {
+  width: 50%;
+  background-color: #f1d1fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
 }
-.logUp_img{
-    width: 50%;
-    background-color:#f1d1fa;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px 0 0 15px;
+.logUp_img {
+  width: 50%;
+  background-color: #f1d1fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
 }
-img{
+img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .log {
+    height: 85%;
+  }
+  .log_info {
     width: 100%;
+  }
+  .log_info_box {
+    font-size: 0.9rem;
+  }
+  .log_img {
+    width: 0;
+  }
+  .logUp_img{
+    width: 0;
+  }
+  img {
+    width: 0;
+  }
 }
