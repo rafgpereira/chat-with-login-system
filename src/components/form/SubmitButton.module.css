@@ -1,6 +1,5 @@
 .submit_button button{
     margin:10px 0 10px 0;
-    padding: 13px;
     font-size: 1rem;
     font-style: arial;
     font-weight: 700;
@@ -11,7 +10,9 @@
     cursor:pointer;
     width: 100%;
     transition: .3s;
+    box-sizing: border-box;
 }
+
 .submit_button button:hover{
     background-color: #D170EF;
 }

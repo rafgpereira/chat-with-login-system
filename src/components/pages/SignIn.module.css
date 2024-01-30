@@ -5,7 +5,7 @@
   max-width: 1000px;
   height: 90%;
   border-radius: 15px;
-  box-shadow: 3px 3px 8px #00000033;
+  box-shadow: 0 0 20px 25px rgba(0, 0, 0, 0.189);
 }
 .log_info {
   width: 50%;
@@ -38,7 +38,9 @@
 .div_msg {
   height: 50px;
 }
-
+.log_form{
+  width: 100%;
+}
 .log_img {
   width: 50%;
   background-color: #f1d1fa;

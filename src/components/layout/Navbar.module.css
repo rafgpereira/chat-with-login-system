@@ -1,0 +1,55 @@
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #e7a3fa;
+    font-weight: bolder;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    
+}
+
+.buttons button{
+    color: white;
+    width: 100px;
+    height: 100%;
+    font-weight: bolder;
+    transition: .3s;
+}
+.buttons button:hover{
+    background-color: #D170EF;
+    width: 110px;
+}
+.buttons button svg{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu{
+        display:none;
+    }
+    .buttons{
+        width: 100vw;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .buttons button{
+        width: 32vw;    
+    }
+    .buttons button:hover{
+        width: 36vw;
+    }
+
+
+}
