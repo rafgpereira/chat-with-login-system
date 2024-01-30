@@ -13,7 +13,7 @@ export default function Chat() {
 
   useEffect(() => {
     const initializeSocket = async () => {
-      const newSocket = await io.connect("http://localhost:3003");
+      const newSocket = await io.connect("https://chat-backend-production-052f.up.railway.app");
       newSocket.emit("set_username", username);
       setSocket(newSocket);
     };
