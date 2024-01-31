@@ -25,12 +25,29 @@ export default function Chat() {
   useEffect(() => {
     if (socket) {
 
+        socket.on("user_joined", data =>{
+          setMessageList( current => [...current, {
+            text: `${data.username} ${data.message}` ,
+            authorId: 'system',
+            author: 'Sistema'
+          }]) 
+        })
+        socket.on("user_left", data=>{
+          setMessageList(current => [...current, {
+            text: `${data.username} ${data.message}`,
+            authorId: 'system',
+            author:'Sistema',
+          }])
+        })
+
         socket.on("receive_message", (data) => {
             setMessageList((current) => [...current, data]);
         });
 
         return () => {
             socket.off("receive_message");
+            socket.off("user_joined")
+            socket.off("user_left")
         };
     }
 }, [socket]);
