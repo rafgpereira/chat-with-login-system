@@ -1,12 +1,13 @@
-# Sistema de Login
+# Sistema de CHAT com LOGIN
 
-Este é um sistema de login com CRUD, desenvolvido em JavaScript com React no frontend, conectado a uma API desenvolvida em Node.js com Express no backend e utiliza MongoDB(Atlas) como banco de dados.
+Este é um sistema de chat em tempo real com login implementando CRUD, desenvolvido em JavaScript com React no frontend, conectado a duas API's Node.js com Express: uma para o sistema de login que utiliza MongoDB para o banco de dados, e outra para o sistema de chat, que utiliza a biblioteca Socket.io para a comunicação bidirecional.
 
 ## Funcionalidades
 
 - Login
 - Registro
 - Visualização
+- Chat global em tempo real
 - Logout
 - Edição
 - Deleção
@@ -29,18 +30,22 @@ Para acessar a aplicação web, clique [aqui](https://user-login-system.netlify.
 
 ### Node.js
 
-- Implementação de uma API Node.js com a biblioteca Express.
+- Implementação de duas API's Node.js com a biblioteca Express.
 - Configuração de endpoints.
 - Segurança de senhas com Bcrypt.
 - Proteção e autenticação de rotas com JSON Web Tokens (JWT).
 
 ### MongoDB
 
--Implementação de banco de dados não relacional(NoSQL) em nuvem (Atlas)
+-Implementação de banco de dados não relacional(NoSQL) em nuvem (Atlas).
+
+### Socket.io
+
+- Implementação da biblioteca e seus recursos para a emissão bidirecional de mensagens.
 
 ### Deployment
 
-- Railway: deployment do backend.
+- Railway: deployment dos  dois backends (chat e login).
 - Netlify: deployment do frontend.
 - Atlas: deployment do banco de dados.
 
@@ -54,15 +59,24 @@ Para acessar a aplicação web, clique [aqui](https://user-login-system.netlify.
 
 ![Registro](/src/img/readme-register.png)
 
+### Home
+
+![Home](/src/img/readme-home.png)
+
+### Chat
+
+![Chat](/src/img/readme-chat.png)
+
 ### Usuário
 
-![Usuario](/src/img/readme-user.png)
+![user](/src/img/readme-user.png)
 
 ### Edição de Usuário
 
-![Edit](/src/img/readme-edit.png)
+![edit](/src/img/readme-edit.png)
 
 ### Mensagens dinâmicas
+Algumas mensagens dinâmicas da aplicação:
 
-![Mensagem1](/src/img/readme-msg1.png)
-![Mensagem2](/src/img/readme-msg2.png)
+![message1](/src/img/readme-msg1.png)
+![message2](/src/img/readme-msg2.png)
